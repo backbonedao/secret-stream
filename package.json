@@ -1,14 +1,16 @@
 {
-  "name": "@hyperswarm/secret-stream",
-  "version": "5.2.0",
-  "description": "Secret stream backed by Noise and libsodium's secretstream",
+  "name": "@backbonedao/secret-stream",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "dependencies": {
+    "@backbonedao/crypto": "github:backbonedao/crypto",
+    "@backbonedao/noise-curve-secp256k1": "github:backbonedao/noise-curve-secp256k1",
+    "@backbonedao/noise-handshake": "github:backbonedao/noise-handshake",
     "b4a": "^1.1.0",
-    "noise-curve-ed": "^1.0.2",
     "noise-handshake": "^2.1.0",
+    "sodium-javascript": "^0.8.0",
     "sodium-secretstream": "^1.0.0",
-    "sodium-universal": "^3.0.4",
     "streamx": "^2.10.2",
     "timeout-refresh": "^2.0.0"
   },
@@ -17,16 +19,27 @@
     "tape": "^5.2.2"
   },
   "scripts": {
-    "test": "standard && tape test.js"
+    "test": "tape test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hyperswarm/secret-stream.git"
+    "url": "https://github.com/backbonedao/secret-stream.git"
   },
-  "author": "Mathias Buus (@mafintosh)",
-  "license": "MIT",
+  "contributors": [
+    {
+      "name": "backbone://dao",
+      "email": "team@backbonedao.com",
+      "url": "https://backbonedao.com"
+    },
+    {
+      "name": "Mathias Buus",
+      "email": "mathiasbuus@gmail.com",
+      "url": "https://mafinto.sh"
+    }
+  ],
+  "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/hyperswarm/secret-stream/issues"
+    "url": "https://github.com/backbonedao/secret-stream/issues"
   },
-  "homepage": "https://github.com/hyperswarm/secret-stream"
+  "homepage": "https://github.com/backbonedao/secret-stream"
 }
